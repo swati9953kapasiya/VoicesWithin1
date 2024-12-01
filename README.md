@@ -1,13 +1,13 @@
 # VoicesWithin1
-npm install
+1.npm install
 
-cd client
+2.cd client
 
 npm install
 
 npm start
 
-cd server
+3.cd server
 
 npm install
 
