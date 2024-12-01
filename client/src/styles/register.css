@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+:root{
+    --primary-color : #5e04fa;
+    --text-color: #27005D;
+    --accent-color : #E4F1FF;
+    --highlight-color:#A0FA04;
+    --primary-font: "Alice",sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+span{
+    color:var(--primary-color);
+}
+.max-width {
+  width: min(290ch, 100% - 4rem);
+  margin-inline: auto;
+}
+.register-logo-header {
+    width: 100%;
+    text-align: center;
+}
+
+.register-logo-header h1{
+    font-size: 5rem;
+    font-family: var(--primary-font);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.register-logo-header p{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+.welcome-back-header{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.welcome-back-header h1{
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+}
+.reg-button{
+    margin-top: 5rem;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    background-color: var(--highlight-color);
+    border: none;
+    outline:none;
+    color:var(--text-color);
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+.rules-list {
+    padding: 1.5rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+.register-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.email-register-form,.password-register-form,.name-register-form{
+    margin-top: 2rem;
+    width: 25%;
+    padding:2rem 2rem;
+    font-size: 1.75rem;
+    font-family: var(--primary-font);
+    border-radius: 0.3rem;
+    outline: none;
+    border: 0.1rem solid black;
+}
+.submit-register-form{
+    margin-top: 2rem;
+    width: 25%;
+    padding: 2rem 2rem;
+    font-size: 1.75rem;
+    font-family: var(--primary-font);
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    color:var(--accent-color);
+}
+.email-register-form:focus,.password-register-form:focus,.name-register-form:focus{
+    border: 0.2rem solid var(--primary-color);
+}
+
+.other-login{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.other-login h3{
+    margin-top: 5rem;
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+}
+
+.successful-register{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+.password-container {
+    position: relative;
+    width: 25%; 
+    margin:auto; 
+  }
+  
+  .password-register-form {
+    width: 100%; 
+  }
+  
+  .password-toggle {
+    position: absolute; 
+    right: 10px;
+    top: 60%; 
+    transform: translateY(-50%); 
+    background: none;
+    border: none; 
+    cursor: pointer; 
+  }
+@media screen and (max-width:1000px) {
+
+    .email-register-form,.password-register-form,.name-register-form{
+        width: 100%;
+    }
+    .submit-register-form{
+        width: 100%;
+    }
+
+}
